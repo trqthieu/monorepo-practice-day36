@@ -1,0 +1,18 @@
+name: Backend CI/CD
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'services/backend/**'
+      - 'package.json'
+  pull_request:
+    branches: [ main ]
+    paths:  
+      - 'services/backend/**'
+  
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cd services/backend && npm test
