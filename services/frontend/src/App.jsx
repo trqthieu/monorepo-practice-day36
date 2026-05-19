@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1>Frontend Service</h1>
-      <h2>Users List</h2>
+      <h2>Users List Update Frontend Only</h2>
       <ul>
         {users.map(user => (
           <li key={user.id}>
