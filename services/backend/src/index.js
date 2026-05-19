@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Mock data
 const users = [
-  { id: 1, name: 'Alice', email: 'alice@example.com', role: 'Admin' },
+  { id: 1, name: 'Alice BE update', email: 'alice@example.com', role: 'Admin' },
   { id: 2, name: 'Bob', email: 'bob@example.com', role: 'Developer' },
   { id: 3, name: 'Carol', email: 'carol@example.com', role: 'Designer' },
 ];
